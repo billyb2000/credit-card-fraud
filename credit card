@@ -1,3 +1,5 @@
+import time
+
 # Throughout this project, the use of data structures are not permitted (you are permitted to use data structures now)
 # Minimal built in functions are to be used and the majority of functions must be
 # created yourself
@@ -14,7 +16,6 @@ def printMenu():
           9. Quit\n
           Enter menu option (1-9)
           ''')
-
 '''
     This function is to be edited to achieve the task.
     It is your decision to make this function a procedural or functional type
@@ -22,16 +23,23 @@ def printMenu():
     This function may also be broken down further depending on your algorithm/approach
 '''
 def enterCustomerInfo():
-    pass    # Remove this pass statement and add your own code below
+    #get customer to input their info
+    first_name = input("what is your first name?: ")
+    last_name = input("what is your last name?:")
+    customer_city = input("what city do you live in?:") 
 
-'''
+'''1
     This function is to be edited to achieve the task.
     It is your decision to make this function a procedural or functional type
     You may place as many or as few parameters as needed
     This function may also be broken down further depending on your algorithm/approach
 '''
 def validatePostalCode():
-    pass    # Remove this pass statement and add your own code below
+    postal_file_open = open("postal_codes.csv", "r")
+    if postal_code_info in postal_file_open:
+        print("That is a valid postal code")
+    else: 
+        print("invalid postal code")
 
 '''
     This function is to be edited to achieve the task.
@@ -40,7 +48,8 @@ def validatePostalCode():
     This function may also be broken down further depending on your algorithm/approach
 '''
 def validateCreditCard():
-    pass    # Remove this pass statement and add your own code below
+   credit_card_info
+
 
 '''
     This function is to be edited to achieve the task.
@@ -80,6 +89,9 @@ while userInput != exitCondition:
         # Only the line below may be editted based on the parameter list and how you design the method return
         # Any necessary variables may be added to this if section, but nowhere else in the code
         enterCustomerInfo()
+        postal_code_info= input(" What is your postal code?: ") 
+        credit_card_info = int(input("what is your credit card number?: ")) 
+        validatePostalCode()
 
     elif userInput == generateCustomerOption: 
         # Only the line below may be editted based on the parameter list and how you design the method return
@@ -90,3 +102,4 @@ while userInput != exitCondition:
 
 #Exits once the user types 
 print("Program Terminated")
+
